@@ -3,7 +3,6 @@
 var GITHUB_USER = "ericalapadatjanzen";
 var GITHUB_TOKEN = "16ef1493f4eb677a3a7c1e1d7aacf2619b812618";
 
-// var https = require('https');
 var request = require('request');
 var fs = require('fs');
 
@@ -33,6 +32,7 @@ function downloadingImageByURL(url, filepath){
   request(url).pipe(fs.createWriteStream(filepath));
 
 }
+
 
 
 
